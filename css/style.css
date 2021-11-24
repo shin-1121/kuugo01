@@ -1,0 +1,973 @@
+body {
+    overflow: hidden;
+    font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    overflow: auto;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+img {
+    width: 100%;
+}
+
+#header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.header-title {
+    font-size: 24px;
+    margin-right: auto;
+    margin-left: 3.1vw;
+}
+
+.gnav-list {
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+}
+
+.gnav-list-item a {
+    margin-left: 4.0vw;
+
+}
+.gnav-list-item:first-of-type a{
+    margin-left: 0;
+}
+
+
+.gnav-list-item a:hover {
+    text-decoration: underline;
+}
+
+.gnav-list-button{
+    width: 200px;
+    height: 90px;
+    background-color: #0C3117;
+    margin-left: 2.5vw;
+    line-height: 90px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.gnav-list-button a{
+    color: #fff;
+
+}
+.gnav-list-button :hover{
+    opacity: 0.3;
+    transition: 0.3s
+
+}
+
+
+
+@media screen and (max-width: 900px) {
+.gnav-btn {
+    width: 50px;
+    height: 50px;
+    background-color: #0C3117;
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    z-index: 3;
+}
+
+.gnav-btn span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    margin:  11px auto;
+}
+
+.gnav-list {
+    display: block;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translate(100%);
+            transform: translate(100%);
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0;
+    margin-top: 0;
+    z-index: 3;
+}
+
+.show .gnav-list {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    
+}
+
+.gnav-list-item {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.gnav-list-item a {
+    color: #000;
+}
+
+.gnav-list-button  {
+    margin: 30px auto;
+    height: 50px;
+    line-height: 50px;
+
+}
+.gnav-list-button  a{
+    text-align: center;
+    margin: auto;
+    display: block;
+
+} 
+}
+
+.main-visual {
+    width: 81.25%;
+    background-image: url(../img/AdobeStock_352243510.png);
+    margin-left: auto;
+    object-fit: cover;
+    height: 700px;
+    position: relative;
+}
+
+.main-title {
+    font-size: 42px;
+    
+    font-family: "ヒラギノ明朝 ProN";
+    position: absolute;
+    left: -15vw;
+    top: 18%;
+}
+
+@media screen and (max-width: 900px) {
+    .main-title {
+        font-size: 32px;
+    }
+}
+
+
+@media screen and (max-width: 540px) {
+    .main-title {
+        font-size: 24px;
+    }
+}
+
+.news-wrap {
+    position: absolute;
+    bottom: 100px;
+    background-color: #fff;
+    padding: 20px 0;
+    width: 77%;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+    .news-wrap{
+        width: 90%;
+        display: block;
+        }
+}
+
+.news-title {
+    margin-left: 3.125vw;
+    font-size: 0.93vw;
+    font-family: "ヒラギノ明朝 ProN";
+    position: relative;
+}
+
+@media screen and (max-width: 900px) {
+    .news-title{
+
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    }
+}
+
+.news-title::after {
+    content: "";
+    display: inline-block;
+    width: 5.0vw;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 120%;
+    background-color: #222;
+}
+
+@media screen and (max-width: 900px) {
+    .news-title::after{
+        width: 100px;
+        position: static;
+        margin-left: 30px;
+    }
+}
+
+.news-text {
+    font-size: 0.833vw;
+    margin-left: 12.75vw;
+
+}
+@media screen and (max-width: 900px) {
+    .news-text {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+}
+
+
+.entry {
+    max-width: 81.25%;
+    margin-left: auto;
+    margin-top: 135px;
+    position: relative;
+}
+@media screen and (max-width: 900px) {
+    .entry  {
+        margin: 50px auto;
+        position: static;
+    }
+}
+
+
+.entry-title {
+    font-size: 1.875vw;
+    font-family: "ヒラギノ明朝 ProN";
+    line-height: 1.7;
+    letter-spacing: 3.4px;
+    width: 38%;
+}
+
+@media screen and (max-width: 900px) {
+    .entry-title  {
+        margin: auto;
+        text-align: center;
+        font-size: 24px;
+        width: 100%;
+        
+    }
+
+}
+@media screen and (max-width: 540px) {
+    .entry-title  {
+
+        font-size: 20px;
+        
+    }
+
+}
+
+.entry-title-text {
+    font-size: 16px;
+    font-family: "ヒラギノ角ゴシック";
+    line-height: 2;
+    width: 28%;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 900px) {
+    .entry-title-text  {
+        margin: 30px auto;
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+.entry .entry-img:nth-of-type(1) {
+    position: absolute;
+    top: -20px;
+    right: 26.56vw;
+    width: 18.22vw;
+}
+
+.entry .entry-img:nth-of-type(2) {
+    position: absolute;
+    top: 5%;
+    right: 3.125vw;
+    width: 18.22vw;
+
+}
+
+.entry .entry-img:nth-of-type(3) {
+    margin-top: 90px;
+    max-width: 950px;
+    margin-left: 0;
+}
+
+@media screen and (max-width: 900px) {
+    
+.entry .entry-img:nth-of-type(1){
+        position: static;
+        margin-top: 50px;
+        width: 100%;
+
+}
+
+.entry .entry-img:nth-of-type(2){
+        position: static;
+        margin-top: 50px;
+        width: 100%;
+        
+
+    }
+    .entry .entry-img:nth-of-type(3){
+        margin: 50px auto;
+        width: 100%;
+
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+.entry-img{
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: auto;
+
+}
+.entry-img img {
+    display: block;
+    text-align: center;
+}
+
+}
+@media screen and (max-width: 580px) {
+.entry-img{
+    padding: 0 10px;
+
+}
+}
+.category {
+    margin-top: 180px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    padding:  0 3.125vw;
+}
+
+
+@media screen and (max-width: 900px) {
+.category{
+    display: block;
+    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+}
+
+.category::after {
+    position: absolute;
+    background-color: #f2f1e9;
+    width: 100%;
+    height: 100%;
+    content : "";
+    top:50px;
+    z-index: -1;
+    left: 0;
+}
+
+
+.category-wrap {
+    margin-right: 2.6vw;
+    margin-left: 7.8125vw;
+
+}
+@media screen and (max-width: 900px) {
+    .category-wrap  {
+        margin: 0 auto;
+
+    }
+
+
+}
+@media screen and (max-width: 900px) {
+.category-wrap>.green-btn a{
+    
+    position: absolute;
+    bottom: -30px;
+    right: 20px;
+}
+}
+
+.category-title {
+    font-size: 38px;
+    font-weight: bold;
+    font-family: "Didot";
+    line-height: 1.2;
+    letter-spacing: 3.0px;
+}
+
+@media screen and (max-width: 900px) {
+.category-title{
+    
+    text-align: center;
+    margin-top: 100px;
+    position: relative;
+    top: -30px;
+}
+
+.category-title span {
+    text-align: center;
+}
+}
+
+.category-title span {
+    display: block;
+    font-size: 0.93vw;
+    font-family: "ヒラギノ明朝 ProN";
+    line-height: 1.7;
+}
+
+
+.item-wrap {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin-left: auto;
+}
+@media screen and (max-width: 900px) {
+.item-wrap{
+    display: block;
+    padding: 0 10px;
+}
+}
+    
+.item-img {
+    width: 23%;
+    margin-left: 2.0vw;
+}
+
+@media screen and (max-width: 900px) {
+.item-img{
+    width: 90%;
+    margin:auto;
+}
+}
+
+figcaption {
+    padding: 10px;
+    font-size: 0.93vw;
+}
+
+@media screen and (max-width: 900px) {
+
+figcaption {
+    font-size: 16px;
+}
+}
+
+.item-img:first-child {
+    margin-left: 0;
+}
+@media screen and (max-width: 900px) {
+
+.item-img:first-child {
+        margin: auto;
+}
+}
+
+.green-btn {
+    width: 200px;
+    padding: 20px 0;
+    
+}
+
+.green-btn a {
+    background-color: #0C3117;
+    color: #fff;
+    display: block;
+    width: 200px;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    font-size: 0.83vw;
+}
+.green-btn a::after {
+    content: "";
+    display: inline-block;
+    width: 21px;
+    height: 1px;
+    background-color: #fff;
+    position: relative;
+    top: -5px;
+    right: -34px;
+    
+}
+
+.pick-up {
+    padding: 170px 0 50px;
+    position: relative;
+    
+}
+
+@media screen and (max-width: 580px) {
+.pick-up{
+    padding-top: 80px;
+}
+}
+
+.pick-up-title {
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+    font-family:"Didot";
+    line-height: 1.2;
+    letter-spacing: 3.0px;
+}
+
+.pick-up-number {
+    font-size: 40px;
+    font-family: "Didot";
+    font-weight: bold;
+    position: relative;
+    left: -50px;
+}
+@media screen and (max-width: 900px) {
+.pick-up-number{
+    font-size: 32px;
+}
+}
+@media screen and (max-width: 580px) {
+.pick-up-number{
+    font-size: 24px;
+    top: 0px;
+    left: 0;
+}
+}
+
+.pick-up-number::after{
+    content: "";
+    display: block;
+    width: 130px;
+    height: 1px;
+    background-color: #222;
+    transform: rotate(140deg);
+    position: relative;;
+    top: 30px;
+    left: 10px;
+}
+@media screen and (max-width: 580px) {
+.pick-up-number::after{
+    left: -20px;
+    top: 10px;
+    width: 70px;
+}
+}
+
+.pick-up-title span {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-family: "ヒラギノ明朝 ProN";
+    line-height: 1.2;
+    letter-spacing: 3.0px;
+    margin-top: 15px;
+}
+.pick-up-wrap {
+    margin-left: 230px;
+    max-width: 1334px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    align-items: flex-start;
+    
+}
+
+@media screen and (max-width: 900px) {
+.pick-up-wrap{
+    display: block;
+    margin: auto;
+
+}
+}
+
+.pick-up-box {
+    width: 50%;
+    position: relative;
+    top: -50px;
+}
+
+
+@media screen and (max-width: 900px) {
+.pick-up-box{
+    width: 80%;
+    margin: auto;
+    top: 0;
+}
+}
+
+.pick-up-img::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 20px;
+    border-right:1px solid #222;
+    border-bottom: 1px solid #222;
+    position: absolute;
+    top: 50%;
+    right:-30px;
+    transform: skew(45deg);
+}
+
+@media screen and (max-width: 900px) {
+    .pick-up-img::after {
+        width: 50px;
+        right:  0;
+    }
+}
+
+.contents-box {
+    width: 50%;
+    margin-left: 7vw;
+
+}
+
+@media screen and (max-width: 900px) {
+.contents-box{
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+.contents-box>.green-btn a {
+    position: absolute;
+    right: 20px;
+
+}
+
+}
+
+.contents-name {
+    margin-top: 40px;
+    font-size: 26px;
+}
+@media screen and (max-width: 900px) {
+.contents-name{
+    text-align: center;
+}
+}
+.contents-text {
+    margin-top: 60px;
+    line-height: 1.75;
+    font-size: 16px;
+    padding-right: 20px;
+}
+@media screen and (max-width: 900px) {
+.contents-text{
+    margin: auto;
+    padding: 40px;
+    
+}
+}
+
+.contents-box >.green-btn a {
+    margin-left: 0;
+    margin-top: 40px;
+    
+}
+
+.choice {
+    background-color:#f4f4f4;
+    max-width: 1920px;
+    padding: 50px 0 30px;
+    position: relative;
+}
+@media screen and (max-width: 900px) {
+.choice{
+    margin-top: 50px;
+
+    
+}
+}
+
+
+
+.choice-title {
+    font-size: 38px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Didot";
+}
+.choice-title span {
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    font-family: "ヒラギノ明朝 ProN";
+
+}
+
+.choice-list {
+    text-align: center;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+
+.choice-wrap {
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 20px;
+}
+
+@media screen and (max-width: 540px) {
+.choice-wrap{
+    display: block;
+}
+}
+
+@media screen and (max-width: 540px) {
+.choice-box{
+    width: 100%;
+    margin-top: 50px;
+}
+
+}
+
+.choice-item {
+    text-align: center;
+    font-size: 26px;
+    font-family: "ヒラギノ明朝 ProN";
+}
+
+.choice-item-img {
+    margin: 50px;
+}
+
+.price {
+    background-color: #fff;
+    text-align: center;
+    max-width: 200px;
+    margin: auto;
+}
+
+
+.contact {
+    background-image: url(../img/home-office-1867761_1280.png);
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    color: #fff;
+    position: relative;
+    padding-top: 74px;
+    padding-bottom: 168px;
+}
+.contact::after {
+    content:"";
+    display: block;
+    background-color: #222;
+    opacity: 0.6;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.shop-wrap {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+.shop:nth-of-type(2){
+    margin-left: 100px;
+}
+
+@media screen and (max-width: 540px) {
+.shop-wrap{
+    display: block;
+}
+.shop:nth-of-type(2) {
+    margin: 30px auto;
+}
+}
+
+.shop dt {
+    letter-spacing: 1.44px;
+    font-size: 18px;
+    font-family: "Didot";
+}
+
+.shop dd {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 2;
+}
+
+
+.contact-wrap {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 3.125vw;
+    color: #fff;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+
+}
+@media screen and (max-width: 540px) {
+.contact-wrap{
+    flex-direction: column;
+}
+
+}
+.contact-title {
+    font-size: 38px;
+    font-family: "Didot";
+    letter-spacing: 3.0px;
+    line-height: 1.2;
+    margin-right: 1.56vw;
+}
+@media screen and (max-width: 540px) {
+.contact-title{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+.contact-text {
+    text-align: center;
+}
+
+}
+
+.contact-text a {
+    color:#fff ;
+    position: relative;
+}
+.contact-text::after {
+    content: "";
+    display: inline-block;
+    width: 5.2vw;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    right:0;
+}
+
+#footer {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    
+}
+
+.footer-logo {
+    width: 113px;
+    font-size: 26px;
+    font-family: "ヒラギノ明朝 ProN";
+    line-height: 1.6;
+    letter-spacing: 2.6px;
+    margin-top: 80px;
+}
+@media screen and (max-width: 540px) {
+.footer-logo{
+    margin-top: 30px;
+}
+}
+
+
+
+.footer-contents{
+    display: flex;
+}
+
+
+.footer-title {
+    margin-top: 20px;
+}
+.footer-contents-list {
+    margin-top: 20px;
+}
+
+.footer-contents-list li::before{ 
+
+    content: "";
+    display: block;
+    width: 10px;
+    height: 1px;
+    background-color:#222 ;  
+    position: relative;
+    top: 10px;
+    left: -20px;
+}
+
+.footer-title:nth-of-type(2) {
+    margin-left: 6.25vw;
+
+    
+}
+.footer-title:nth-of-type(2) ul>li{
+
+    margin-left: 20px;
+    
+}
+
+
+.footer-title:nth-of-type(3) {
+    margin-left: 5.2vw;
+
+    
+}
+.footer-title:nth-of-type(3) ul>li{
+
+    margin-left: 20px;
+
+}
+
+
+
+
+.footer-title:nth-of-type(4) {
+    margin-left: 6.25vw;
+    margin-top: 2px;
+    line-height: 2;
+
+}
+
+.footer-title:nth-of-type(4) li::before{  
+    display: none;
+}
+
+@media screen and (max-width: 540px) {
+.footer-contents{
+
+    display: block;
+}
+
+}
+
+
