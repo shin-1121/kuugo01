@@ -836,13 +836,7 @@ figcaption {
     top: 0;
     left: 0;
 }
-.contact-wrap:hover{
-    background-color:#fff;
-    color: #000;
-    border: 1px solid #333;
 
-
-}
 .contact-wrap{
     overflow: hidden;
 }
