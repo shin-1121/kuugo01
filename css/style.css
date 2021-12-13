@@ -152,6 +152,12 @@ img {
         width: 91.25%;
     }
 }
+@media screen and (max-width: 580px) {
+    .main-visual {
+        width: 100%;
+        background-position: 30%;
+    }
+}
 
 
 .main-title {
@@ -177,9 +183,11 @@ img {
 }
 
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 580px) {
     .main-title {
         font-size: 24px;
+        left: 7vw;
+
     }
 }
 
@@ -289,7 +297,7 @@ img {
     }
 
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 580px) {
     .entry-title  {
 
         font-size: 20px;
@@ -390,7 +398,7 @@ img {
 }
 @media screen and (max-width: 580px) {
 .entry-img{
-    padding: 0 10px;
+    padding: 0 5px;
 
 }
 }
@@ -409,6 +417,7 @@ img {
     margin: auto;
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 50px;
 }
 }
 
@@ -441,8 +450,15 @@ img {
 .category-wrap>.green-btn a{
     
     position: absolute;
-    bottom: -30px;
-    right: 20px;
+    bottom: -24px;
+    right: 40px;
+}
+}
+@media screen and (max-width: 580px) {
+.category-wrap>.green-btn a{
+    
+    right: 30px;
+    bottom: -36px;
 }
 }
 
@@ -555,8 +571,9 @@ figcaption {
 }
 
 .pick-up {
-    padding: 170px 0 50px;
+    padding: 100px 0 50px;
     position: relative;
+    
     
 }
 
@@ -632,12 +649,23 @@ figcaption {
     align-items: flex-start;
     
 }
+@media screen and (max-width: 1200px) {
+.pick-up-wrap{
+    margin-left: 100px;
+
+}
+}
 
 @media screen and (max-width: 900px) {
 .pick-up-wrap{
     display: block;
     margin: auto;
 
+}
+}
+@media screen and (max-width: 580px) {
+.pick-up-wrap{
+    padding: 0 20px;
 }
 }
 
@@ -714,7 +742,15 @@ figcaption {
 @media screen and (max-width: 900px) {
 .contents-text{
     margin: auto;
-    padding: 20px;
+    text-align: center;
+    padding: 20px 40px;
+    
+}
+}
+@media screen and (max-width: 580px) {
+.contents-text{
+    margin: auto;
+    padding: 20px 0;
     
 }
 }
@@ -724,12 +760,25 @@ figcaption {
     margin-top: 40px;
     
 }
+@media screen and (max-width: 900px) {
+    .contents-box >.green-btn a {
+        margin-right: 30px;
+    }
+
+}
+@media screen and (max-width: 580px) {
+    .contents-box >.green-btn a {
+        margin-right: -10px;
+    }
+
+}
 
 .choice {
     background-color:#f4f4f4;
     max-width: 1920px;
     padding: 50px 0 30px;
     position: relative;
+    margin: auto;
 }
 @media screen and (max-width: 900px) {
 .choice{
@@ -771,13 +820,13 @@ figcaption {
     padding: 0 20px;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 580px) {
 .choice-wrap{
     display: block;
 }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 580px) {
 .choice-box{
     width: 100%;
     margin-top: 50px;
@@ -818,7 +867,7 @@ figcaption {
     padding-top: 74px;
     padding-bottom: 168px;
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 580px) {
 .contact{
     padding-top:20px;
     padding-bottom: 80px;
@@ -875,9 +924,17 @@ figcaption {
     margin-left: 100px;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 900px) {
+.shop-wrap{
+    padding: 20px 40px;
+}
+
+
+}
+@media screen and (max-width: 580px) {
 .shop-wrap{
     display: block;
+    padding: 20px;
 }
 .shop:nth-of-type(2) {
     margin: 30px auto;
@@ -914,9 +971,16 @@ figcaption {
 
 }
 
+@media screen and (max-width: 900px) {
+.contact-wrap{
+    padding-right: 40px;
+    padding-left: 40px;
+}
 
 
-@media screen and (max-width: 540px) {
+}
+
+@media screen and (max-width: 580px) {
 .contact-wrap{
     flex-direction: column;
 }
@@ -929,7 +993,7 @@ figcaption {
     line-height: 1.2;
     margin-right: 1.56vw;
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 580px) {
 .contact-title{
     margin-bottom: 20px;
     text-align: center;
@@ -962,6 +1026,18 @@ figcaption {
     padding: 20px;
     
 }
+@media screen and (max-width: 900px) {
+    #footer{
+        padding: 20px 40px;
+    }
+
+}  
+@media screen and (max-width: 580px) {
+    #footer{
+        padding: 20px;
+    }
+
+}   
 
 .footer-logo {
     width: 113px;
@@ -971,7 +1047,7 @@ figcaption {
     letter-spacing: 2.6px;
     margin-top: 80px;
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 580px) {
 .footer-logo{
     margin-top: 30px;
 }
@@ -1040,7 +1116,7 @@ figcaption {
     display: none;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 580px) {
 .footer-contents{
 
     display: block;
