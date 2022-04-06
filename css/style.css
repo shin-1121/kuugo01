@@ -553,8 +553,9 @@ figcaption {
     height: 46px;
     text-align: center;
     line-height: 46px;
-    font-size: 0.83vw;
+    font-size: 14px;
 }
+
 .green-btn a::after {
     content: "";
     display: inline-block;
@@ -787,8 +788,6 @@ figcaption {
     
 }
 }
-
-
 
 .choice-title {
     font-size: 38px;
